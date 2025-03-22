@@ -22,4 +22,4 @@ date /t
 :: git commit -m "massage"
 :: git config --global user.email "zoujiankun@sina.cn"
 :: git config --global user.name "n-paradigm"
-
+:: dir /a     //see the hiden directory

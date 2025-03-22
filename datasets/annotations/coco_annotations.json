@@ -1,0 +1,29 @@
+{
+    "images": [
+        {
+            "id": 1,
+            "file_name": "cabbage_001.jpg",
+            "width": 1024,
+            "height": 768
+        }
+    ],
+    "annotations": [
+        {
+            "image_id": 1,
+            "bbox": [
+                100,
+                200,
+                300,
+                400
+            ],
+            "category_id": 1
+        }
+    ],
+    "categories": [
+        {
+            "id": 1,
+            "name": "cabbage",
+            "supercategory": "vegetable"
+        }
+    ]
+}
