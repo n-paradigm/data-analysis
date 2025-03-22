@@ -5,7 +5,7 @@ from tkinter import filedialog
 from PIL import Image, ImageTk
 
 # 全局变量
-image_list = []  # 存储图片文件路径
+image_list = ["datasets/images"]  # 存储图片文件路径
 current_index = 0  # 当前图片索引
 json_folder = ""  # 存储 JSON 文件的文件夹路径
 
@@ -13,8 +13,8 @@ json_folder = ""  # 存储 JSON 文件的文件夹路径
 def select_folder():
     global image_list, json_folder, current_index
     folder = filedialog.askdirectory()
-    if not folder:
-        return
+    """if not folder:
+        return"""
     
     json_folder = folder
     image_list = [os.path.join(folder, f) for f in os.listdir(folder) if f.endswith(('.jpg', '.png', '.jpeg'))]
